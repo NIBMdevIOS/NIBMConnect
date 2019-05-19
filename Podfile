@@ -7,6 +7,8 @@ target 'NIBMConnect' do
 
   # Pods for NIBMConnect
 pod 'FirebaseUI/Auth'
+pod 'Firebase/Database'
 pod 'GoogleSignIn'
 pod 'IQKeyboardManager'
+pod 'Nuke'
 end

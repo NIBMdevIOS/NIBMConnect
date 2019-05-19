@@ -13,7 +13,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignInViewController" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signInVC" id="BYZ-38-t0r" customClass="SignInViewController" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,11 +151,20 @@
                         <outlet property="tpPassword" destination="rtn-cF-g0L" id="C6N-8S-rT8"/>
                         <segue destination="BjC-K6-YWW" kind="show" identifier="forgotPasswordSqgue" id="pv8-47-cN9"/>
                         <segue destination="dhF-Up-D6O" kind="show" identifier="signUpSegue" id="GxO-aB-dPU"/>
+                        <segue destination="gjL-IU-dqF" kind="show" identifier="goToHomeSqgue" id="1hh-bg-Nf8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="280" y="-4"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="fPP-op-VaL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="gjL-IU-dqF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RKg-a2-xxL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1361" y="-522"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Jgz-AR-cVU">
@@ -282,6 +291,7 @@
                         <outlet property="tfEmail" destination="ask-PD-Wj0" id="2V6-Qw-U7v"/>
                         <outlet property="tfPassword" destination="Arh-WQ-v2W" id="bgT-PQ-oJo"/>
                         <outlet property="tfUserName" destination="DNv-H7-Obe" id="nzF-Gd-79a"/>
+                        <segue destination="gjL-IU-dqF" kind="show" identifier="signUpGoToHome" id="kj3-lR-AYH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZd-DT-Iz2" sceneMemberID="firstResponder"/>
@@ -392,4 +402,7 @@
         <image name="Google_logo" width="512" height="512"/>
         <image name="bg" width="891" height="509.5"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="1hh-bg-Nf8"/>
+    </inferredMetricsTieBreakers>
 </document>

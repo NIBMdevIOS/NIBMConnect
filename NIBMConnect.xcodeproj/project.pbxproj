@@ -16,8 +16,12 @@
 		0EB94E65228DDDA00095E5B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB94E64228DDDA00095E5B6 /* Assets.xcassets */; };
 		0EB94E68228DDDA00095E5B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB94E66228DDDA00095E5B6 /* LaunchScreen.storyboard */; };
 		316AC576998F91F9C59C2512 /* Pods_NIBMConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DFA8147CCE722AB9CCE4C2 /* Pods_NIBMConnect.framework */; };
-		643046C8229126A500F05D40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 643046C7229126A500F05D40 /* GoogleService-Info.plist */; };
 		643046CB2291286500F05D40 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643046CA2291286500F05D40 /* Home.storyboard */; };
+		643046DB2291736400F05D40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 643046DA2291736400F05D40 /* GoogleService-Info.plist */; };
+		643046DF229174F200F05D40 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643046DE229174F200F05D40 /* StartViewController.swift */; };
+		643046E122917BDD00F05D40 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643046E022917BDD00F05D40 /* FriendsViewController.swift */; };
+		643046E4229184B700F05D40 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643046E3229184B700F05D40 /* Friend.swift */; };
+		643046E72291991A00F05D40 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643046E62291991A00F05D40 /* FriendTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +36,12 @@
 		0EB94E67228DDDA00095E5B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EB94E69228DDDA00095E5B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49DFA8147CCE722AB9CCE4C2 /* Pods_NIBMConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NIBMConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		643046C7229126A500F05D40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		643046CA2291286500F05D40 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		643046DA2291736400F05D40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		643046DE229174F200F05D40 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StartViewController.swift; path = NIBMConnect/ViewControllers/StartViewController.swift; sourceTree = SOURCE_ROOT; };
+		643046E022917BDD00F05D40 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendsViewController.swift; path = NIBMConnect/ViewControllers/FriendsViewController.swift; sourceTree = SOURCE_ROOT; };
+		643046E3229184B700F05D40 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		643046E62291991A00F05D40 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		B351CAEF5D885E2B0307F4A4 /* Pods-NIBMConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.release.xcconfig"; sourceTree = "<group>"; };
 		F7E2460A617BD0CA81483B67 /* Pods-NIBMConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.debug.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +65,8 @@
 				0E333995228F4157005576A4 /* SignUpViewController.swift */,
 				0E333997228F4181005576A4 /* ForgotPasswordViewController.swift */,
 				0E333999228F4ADF005576A4 /* HomeViewController.swift */,
+				643046DE229174F200F05D40 /* StartViewController.swift */,
+				643046E022917BDD00F05D40 /* FriendsViewController.swift */,
 			);
 			name = ViewControllers;
 			path = "New Group";
@@ -83,12 +93,14 @@
 		0EB94E5C228DDD9F0095E5B6 /* NIBMConnect */ = {
 			isa = PBXGroup;
 			children = (
+				643046E52291989B00F05D40 /* Cells */,
+				643046E22291849A00F05D40 /* Models */,
 				643046C92291271000F05D40 /* Storyboard */,
 				0E333992228F404C005576A4 /* ViewControllers */,
 				0EB94E5D228DDD9F0095E5B6 /* AppDelegate.swift */,
 				0EB94E64228DDDA00095E5B6 /* Assets.xcassets */,
+				643046DA2291736400F05D40 /* GoogleService-Info.plist */,
 				0EB94E66228DDDA00095E5B6 /* LaunchScreen.storyboard */,
-				643046C7229126A500F05D40 /* GoogleService-Info.plist */,
 				0EB94E69228DDDA00095E5B6 /* Info.plist */,
 			);
 			path = NIBMConnect;
@@ -109,6 +121,22 @@
 				643046CA2291286500F05D40 /* Home.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		643046E22291849A00F05D40 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				643046E3229184B700F05D40 /* Friend.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		643046E52291989B00F05D40 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				643046E62291991A00F05D40 /* FriendTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		BB29AACFA936ACF0CBD15282 /* Pods */ = {
@@ -183,7 +211,7 @@
 			files = (
 				0EB94E68228DDDA00095E5B6 /* LaunchScreen.storyboard in Resources */,
 				643046CB2291286500F05D40 /* Home.storyboard in Resources */,
-				643046C8229126A500F05D40 /* GoogleService-Info.plist in Resources */,
+				643046DB2291736400F05D40 /* GoogleService-Info.plist in Resources */,
 				0EB94E65228DDDA00095E5B6 /* Assets.xcassets in Resources */,
 				0EB94E63228DDD9F0095E5B6 /* Main.storyboard in Resources */,
 			);
@@ -227,6 +255,8 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -236,6 +266,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -273,11 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				643046E72291991A00F05D40 /* FriendTableViewCell.swift in Sources */,
 				0E33399A228F4ADF005576A4 /* HomeViewController.swift in Sources */,
 				0E333998228F4181005576A4 /* ForgotPasswordViewController.swift in Sources */,
 				0E333996228F4157005576A4 /* SignUpViewController.swift in Sources */,
 				0E333994228F409A005576A4 /* SignInViewController.swift in Sources */,
+				643046E122917BDD00F05D40 /* FriendsViewController.swift in Sources */,
 				0EB94E5E228DDD9F0095E5B6 /* AppDelegate.swift in Sources */,
+				643046DF229174F200F05D40 /* StartViewController.swift in Sources */,
+				643046E4229184B700F05D40 /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
