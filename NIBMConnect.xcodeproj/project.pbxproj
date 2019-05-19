@@ -22,6 +22,7 @@
 		643046E122917BDD00F05D40 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643046E022917BDD00F05D40 /* FriendsViewController.swift */; };
 		643046E4229184B700F05D40 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643046E3229184B700F05D40 /* Friend.swift */; };
 		643046E72291991A00F05D40 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643046E62291991A00F05D40 /* FriendTableViewCell.swift */; };
+		643046F42291E19900F05D40 /* FriendDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643046F32291E19900F05D40 /* FriendDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		643046E022917BDD00F05D40 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendsViewController.swift; path = NIBMConnect/ViewControllers/FriendsViewController.swift; sourceTree = SOURCE_ROOT; };
 		643046E3229184B700F05D40 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		643046E62291991A00F05D40 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		643046F32291E19900F05D40 /* FriendDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendDetailsViewController.swift; path = NIBMConnect/ViewControllers/FriendDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
 		B351CAEF5D885E2B0307F4A4 /* Pods-NIBMConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.release.xcconfig"; sourceTree = "<group>"; };
 		F7E2460A617BD0CA81483B67 /* Pods-NIBMConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.debug.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 				0E333999228F4ADF005576A4 /* HomeViewController.swift */,
 				643046DE229174F200F05D40 /* StartViewController.swift */,
 				643046E022917BDD00F05D40 /* FriendsViewController.swift */,
+				643046F32291E19900F05D40 /* FriendDetailsViewController.swift */,
 			);
 			name = ViewControllers;
 			path = "New Group";
@@ -308,6 +311,7 @@
 				643046E72291991A00F05D40 /* FriendTableViewCell.swift in Sources */,
 				0E33399A228F4ADF005576A4 /* HomeViewController.swift in Sources */,
 				0E333998228F4181005576A4 /* ForgotPasswordViewController.swift in Sources */,
+				643046F42291E19900F05D40 /* FriendDetailsViewController.swift in Sources */,
 				0E333996228F4157005576A4 /* SignUpViewController.swift in Sources */,
 				0E333994228F409A005576A4 /* SignInViewController.swift in Sources */,
 				643046E122917BDD00F05D40 /* FriendsViewController.swift in Sources */,

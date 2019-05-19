@@ -14,7 +14,6 @@ class FriendsViewController: UIViewController {
 
     var ref: DatabaseReference!
     var friendList:[Friend] = []
-    var Student:Friend? = nil
     
     @IBOutlet weak var tableview: UITableView!
     
@@ -75,17 +74,15 @@ extension FriendsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        Student = friendList[indexPath.row]
-        performSegue(withIdentifier: "detailsSegue", sender: self)
+        performSegue(withIdentifier: "friendDetailsSegue", sender: friendList[indexPath.row])
     }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "detailsSegue"{
-//            if let nextViewController = segue.destination as? PersonalDetailsViewController {
-//                nextViewController.friendObject = Student
-//            }
+        if segue.identifier == "friendDetailsSegue"{
+            if let nextViewController = segue.destination as? FriendDetailsViewController {
+                nextViewController.friend = sender as? Friend
+            }
         }
     }
     

@@ -211,17 +211,17 @@
                     <navigationItem key="navigationItem" title="Friends" id="6WP-re-aKr"/>
                     <connections>
                         <outlet property="tableview" destination="ySK-QG-2ux" id="inA-pe-pQQ"/>
-                        <segue destination="aEw-zf-1wa" kind="show" id="mAs-wf-LlR"/>
+                        <segue destination="aEw-zf-1wa" kind="show" identifier="friendDetailsSegue" id="mAs-wf-LlR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DhV-ci-Adr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1622" y="-313"/>
         </scene>
-        <!--View Controller-->
+        <!--Friend Details View Controller-->
         <scene sceneID="orz-7a-PiU">
             <objects>
-                <viewController id="aEw-zf-1wa" sceneMemberID="viewController">
+                <viewController id="aEw-zf-1wa" customClass="FriendDetailsViewController" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="581-zf-wjQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -239,37 +239,31 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="plF-rD-zRo">
-                                <rect key="frame" x="15" y="323.33333333333331" width="384" height="324.99999999999994"/>
+                                <rect key="frame" x="15" y="323.33333333333331" width="384" height="274.99999999999994"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="wTO-mJ-Hnf">
-                                        <rect key="frame" x="0.0" y="0.0" width="103" height="325"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="103" height="275"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="XSA-Ap-xJw">
-                                                <rect key="frame" x="0.0" y="0.0" width="83.333333333333329" height="28"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="83.333333333333329" height="27.333333333333332"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="sBr-aX-Vgb">
-                                                <rect key="frame" x="0.0" y="53.000000000000007" width="80.666666666666671" height="24.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="52.333333333333378" width="80.666666666666671" height="24.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9z5-Gi-Uuj">
-                                                <rect key="frame" x="0.0" y="102.33333333333337" width="30" height="24.333333333333329"/>
-                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="bUX-8L-gtJ">
-                                                <rect key="frame" x="0.0" y="151.66666666666669" width="40.333333333333336" height="24.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="101.66666666666669" width="30" height="24.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="f4h-ye-TUI">
-                                                <rect key="frame" x="0.0" y="201.00000000000006" width="103" height="25"/>
+                                                <rect key="frame" x="0.0" y="151" width="103" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="dDG-6O-T9r"/>
                                                 </constraints>
@@ -277,14 +271,14 @@
                                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="DOB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="cFu-Oh-hv9">
-                                                <rect key="frame" x="0.0" y="251.00000000000003" width="32.333333333333336" height="24.666666666666657"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" ambiguous="YES" text="DOB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="cFu-Oh-hv9">
+                                                <rect key="frame" x="0.0" y="201.00000000000006" width="32.333333333333336" height="24.333333333333343"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="zwr-c3-UGw">
-                                                <rect key="frame" x="0.0" y="300.66666666666669" width="68.666666666666671" height="24.333333333333314"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="zwr-c3-UGw">
+                                                <rect key="frame" x="0.0" y="250.33333333333329" width="50" height="24.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -295,7 +289,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="pFt-gW-qAH">
-                                        <rect key="frame" x="110" y="0.0" width="274" height="325"/>
+                                        <rect key="frame" x="110" y="0.0" width="274" height="275"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="hE3-NN-4pA">
                                                 <rect key="frame" x="236.66666666666669" y="0.0" width="37.333333333333314" height="25"/>
@@ -324,17 +318,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="chan@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="RaN-JK-Tsb">
-                                                <rect key="frame" x="152.33333333333331" y="150" width="121.66666666666669" height="25"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="25" id="xrZ-g5-Dmr"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0765342567" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="kxi-Ui-Y6F">
-                                                <rect key="frame" x="179.66666666666669" y="200.00000000000006" width="94.333333333333314" height="25"/>
+                                                <rect key="frame" x="179.66666666666669" y="150" width="94.333333333333314" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="lst-Vj-nQS"/>
                                                 </constraints>
@@ -343,7 +328,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23/02/1993" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Oxy-Lp-mRK">
-                                                <rect key="frame" x="183.33333333333331" y="250.00000000000006" width="90.666666666666686" height="25"/>
+                                                <rect key="frame" x="183.33333333333331" y="200.00000000000006" width="90.666666666666686" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="dGJ-Xq-6aC"/>
                                                 </constraints>
@@ -352,7 +337,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="uO5-tp-jsm">
-                                                <rect key="frame" x="97.333333333333357" y="300.00000000000006" width="176.66666666666663" height="25"/>
+                                                <rect key="frame" x="97.333333333333357" y="250.00000000000006" width="176.66666666666663" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="OMW-fG-O2g"/>
                                                 </constraints>
@@ -386,10 +371,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8xJ-7S-OJ9"/>
                     </view>
+                    <connections>
+                        <outlet property="friendImage" destination="3XM-PX-Jxx" id="4Be-Er-Uzt"/>
+                        <outlet property="lblDateOfBirth" destination="Oxy-Lp-mRK" id="giC-1M-rLk"/>
+                        <outlet property="lblFName" destination="hE3-NN-4pA" id="0fp-EH-fTe"/>
+                        <outlet property="lblLastName" destination="WbB-f5-KN8" id="qAn-bk-9Co"/>
+                        <outlet property="location" destination="I0L-V3-wQb" id="dQq-BX-cnJ"/>
+                        <outlet property="phonenumber" destination="kxi-Ui-Y6F" id="4zu-S9-zl2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dJ-w1-Jdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2487" y="-275"/>
+            <point key="canvasLocation" x="2638" y="-313"/>
         </scene>
         <!--Title-->
         <scene sceneID="Xrk-Sa-JvF">
