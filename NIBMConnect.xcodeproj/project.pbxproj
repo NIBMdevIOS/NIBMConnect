@@ -11,12 +11,13 @@
 		0E333996228F4157005576A4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E333995228F4157005576A4 /* SignUpViewController.swift */; };
 		0E333998228F4181005576A4 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E333997228F4181005576A4 /* ForgotPasswordViewController.swift */; };
 		0E33399A228F4ADF005576A4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E333999228F4ADF005576A4 /* HomeViewController.swift */; };
-		0E33399C228F4CC9005576A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E33399B228F4CC9005576A4 /* GoogleService-Info.plist */; };
 		0EB94E5E228DDD9F0095E5B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB94E5D228DDD9F0095E5B6 /* AppDelegate.swift */; };
 		0EB94E63228DDD9F0095E5B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB94E61228DDD9F0095E5B6 /* Main.storyboard */; };
 		0EB94E65228DDDA00095E5B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB94E64228DDDA00095E5B6 /* Assets.xcassets */; };
 		0EB94E68228DDDA00095E5B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB94E66228DDDA00095E5B6 /* LaunchScreen.storyboard */; };
 		316AC576998F91F9C59C2512 /* Pods_NIBMConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DFA8147CCE722AB9CCE4C2 /* Pods_NIBMConnect.framework */; };
+		643046C8229126A500F05D40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 643046C7229126A500F05D40 /* GoogleService-Info.plist */; };
+		643046CB2291286500F05D40 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643046CA2291286500F05D40 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +25,6 @@
 		0E333995228F4157005576A4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = NIBMConnect/ViewControllers/SignUpViewController.swift; sourceTree = SOURCE_ROOT; };
 		0E333997228F4181005576A4 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = NIBMConnect/ViewControllers/ForgotPasswordViewController.swift; sourceTree = SOURCE_ROOT; };
 		0E333999228F4ADF005576A4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = NIBMConnect/ViewControllers/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
-		0E33399B228F4CC9005576A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0EB94E5A228DDD9F0095E5B6 /* NIBMConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NIBMConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB94E5D228DDD9F0095E5B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EB94E62228DDD9F0095E5B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +32,8 @@
 		0EB94E67228DDDA00095E5B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EB94E69228DDDA00095E5B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49DFA8147CCE722AB9CCE4C2 /* Pods_NIBMConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NIBMConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		643046C7229126A500F05D40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		643046CA2291286500F05D40 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B351CAEF5D885E2B0307F4A4 /* Pods-NIBMConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.release.xcconfig"; sourceTree = "<group>"; };
 		F7E2460A617BD0CA81483B67 /* Pods-NIBMConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.debug.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,12 +83,12 @@
 		0EB94E5C228DDD9F0095E5B6 /* NIBMConnect */ = {
 			isa = PBXGroup;
 			children = (
+				643046C92291271000F05D40 /* Storyboard */,
 				0E333992228F404C005576A4 /* ViewControllers */,
 				0EB94E5D228DDD9F0095E5B6 /* AppDelegate.swift */,
-				0EB94E61228DDD9F0095E5B6 /* Main.storyboard */,
 				0EB94E64228DDDA00095E5B6 /* Assets.xcassets */,
-				0E33399B228F4CC9005576A4 /* GoogleService-Info.plist */,
 				0EB94E66228DDDA00095E5B6 /* LaunchScreen.storyboard */,
+				643046C7229126A500F05D40 /* GoogleService-Info.plist */,
 				0EB94E69228DDDA00095E5B6 /* Info.plist */,
 			);
 			path = NIBMConnect;
@@ -98,6 +100,15 @@
 				49DFA8147CCE722AB9CCE4C2 /* Pods_NIBMConnect.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		643046C92291271000F05D40 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0EB94E61228DDD9F0095E5B6 /* Main.storyboard */,
+				643046CA2291286500F05D40 /* Home.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		BB29AACFA936ACF0CBD15282 /* Pods */ = {
@@ -171,7 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EB94E68228DDDA00095E5B6 /* LaunchScreen.storyboard in Resources */,
-				0E33399C228F4CC9005576A4 /* GoogleService-Info.plist in Resources */,
+				643046CB2291286500F05D40 /* Home.storyboard in Resources */,
+				643046C8229126A500F05D40 /* GoogleService-Info.plist in Resources */,
 				0EB94E65228DDDA00095E5B6 /* Assets.xcassets in Resources */,
 				0EB94E63228DDD9F0095E5B6 /* Main.storyboard in Resources */,
 			);
@@ -421,7 +433,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.thilakshi.NIBMConnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -439,7 +451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.thilakshi.NIBMConnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
