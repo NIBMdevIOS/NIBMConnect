@@ -387,7 +387,7 @@
         <!--Title-->
         <scene sceneID="Xrk-Sa-JvF">
             <objects>
-                <viewController id="2c1-tZ-QbC" sceneMemberID="viewController">
+                <viewController id="2c1-tZ-QbC" customClass="HomeworkViewController" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0RJ-DN-Fyq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -396,7 +396,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="134" id="shG-gL-Qtr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="134" id="shG-gL-Qtr" customClass="HomeworkTableViewCell" customModule="NIBMConnect" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="134"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="shG-gL-Qtr" id="ff5-hH-YJr">
@@ -446,6 +446,12 @@
                                                 <constraint firstItem="VIs-Ob-YRQ" firstAttribute="top" secondItem="ff5-hH-YJr" secondAttribute="topMargin" constant="8" id="xHJ-q7-K1m"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="deadline" destination="HDL-Wd-6mf" id="U6f-dT-J0G"/>
+                                            <outlet property="desc" destination="d9P-WZ-EAW" id="sTF-zT-b5F"/>
+                                            <outlet property="lecturerName" destination="lvw-n4-Ep8" id="7Kt-xs-bNC"/>
+                                            <outlet property="title" destination="VIs-Ob-YRQ" id="slS-of-i6w"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -463,6 +469,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Add" image="plus" id="5dA-hk-1lf"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="homeworkTableView" destination="XSQ-zh-FPt" id="K2d-aI-K6K"/>
                         <segue destination="taj-W2-SxQ" kind="show" id="Ff5-Lc-QLA"/>
                     </connections>
                 </viewController>
