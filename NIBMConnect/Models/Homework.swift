@@ -8,22 +8,19 @@
 
 import Foundation
 
-class Homework {
+struct Homework: Codable {
     
-    var firstName:String
-    var lastName:String?
-    var city:String?
-    var birhday:String?
-    var phoneNumber:String?
-    var imgUrl:String?
+    var title:String
+    var description:String
+    var lecturerName:String?
+    var deadlineDate:String?
     
-    init(fName:String, lName:String?, city:String?, birthday:String?, phoneNum:String?, img:String?) {
-        self.birhday = birthday
-        self.firstName = fName
-        self.lastName = lName
-        self.phoneNumber = phoneNum
-        self.city = city
-        self.imgUrl = img
+    init(title:String, description:String, lecturerName:String?, deadlineDate:String?) {
+        self.title = title
+        self.description = description
+        self.lecturerName = lecturerName
+        self.deadlineDate = deadlineDate
+
     }
     
 }

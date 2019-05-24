@@ -11,7 +11,8 @@ import UIKit
 class HomeworkTableViewCell: UITableViewCell {
     
     @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var lecturerName: UIStackView!
+
+    @IBOutlet weak var lecturerName: UILabel!
     @IBOutlet weak var deadline: UILabel!
     @IBOutlet weak var desc: UILabel!
     
@@ -23,6 +24,11 @@ class HomeworkTableViewCell: UITableViewCell {
 
    
     func setUppData(homework: Homework){
+        
+        title.text = homework.title
+        lecturerName.text = homework.lecturerName
+        deadline.text = homework.deadlineDate
+        desc.text = homework.description
         
     }
 

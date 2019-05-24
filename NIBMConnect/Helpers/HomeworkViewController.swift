@@ -16,31 +16,47 @@ class HomeworkViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "My Homeworks"
 
         homeworkTableView.dataSource = self
         homeworkTableView.delegate = self
         
     }
     
-
-
-
+    override func viewWillAppear(_ animated: Bool) {
+         var homeworkDefaultList = UserDefaults.standard.decode(for: [Homework].self, using: String(describing: Homework.self))
+        
+        homeworkList.removeAll()
+        
+        homeworkList = homeworkDefaultList ?? []
+        
+        homeworkTableView.reloadData()
+        
+    }
+    
+    
+    @IBAction func onAddClick(_ sender: Any) {
+        performSegue(withIdentifier: "addHomeworkSegue", sender: nil)
+    }
+    
 }
 
 extension HomeworkViewController: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return homeworkList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "", for: indexPath) as! FriendTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "homeworkCell", for: indexPath) as! HomeworkTableViewCell
         
-      
+        cell.setUppData(homework: homeworkList[indexPath.row])
+        
+        cell.selectionStyle = .none
         
         return cell
     }
-    
-    
     
     
     

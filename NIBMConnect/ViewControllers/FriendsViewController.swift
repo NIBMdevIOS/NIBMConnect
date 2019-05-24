@@ -14,6 +14,7 @@ class FriendsViewController: UIViewController {
 
     var ref: DatabaseReference!
     var friendList:[Friend] = []
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     @IBOutlet weak var tableview: UITableView!
     
@@ -49,6 +50,8 @@ class FriendsViewController: UIViewController {
             
             self.friendList = friends
             self.tableview.reloadData()
+            
+            self.activityIndicator.stopAnimating()
             
         }
     }

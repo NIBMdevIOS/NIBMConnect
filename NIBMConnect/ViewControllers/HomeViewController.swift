@@ -8,6 +8,7 @@
 
 import UIKit
 import LocalAuthentication
+import Firebase
 
 class HomeViewController: UIViewController {
 
@@ -64,5 +65,16 @@ class HomeViewController: UIViewController {
     }
     
     
-
+    @IBAction func logOutClick(_ sender: Any) {
+        
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        
+        performSegue(withIdentifier: "logOutSegue", sender: nil)
+    }
+    
 }
