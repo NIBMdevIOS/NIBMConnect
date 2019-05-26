@@ -20,7 +20,6 @@ struct Homework: Codable {
         self.description = description
         self.lecturerName = lecturerName
         self.deadlineDate = deadlineDate
-
     }
     
 }
