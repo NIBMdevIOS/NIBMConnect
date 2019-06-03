@@ -22,12 +22,12 @@
 		6428A3FF22976E0400972254 /* AddHomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6428A3FE22976E0400972254 /* AddHomeworkViewController.swift */; };
 		6428A40122977C7A00972254 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6428A40022977C7A00972254 /* MyProfileViewController.swift */; };
 		643046CB2291286500F05D40 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643046CA2291286500F05D40 /* Home.storyboard */; };
-		643046DB2291736400F05D40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 643046DA2291736400F05D40 /* GoogleService-Info.plist */; };
 		643046DF229174F200F05D40 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643046DE229174F200F05D40 /* StartViewController.swift */; };
 		643046E122917BDD00F05D40 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643046E022917BDD00F05D40 /* FriendsViewController.swift */; };
 		643046E4229184B700F05D40 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643046E3229184B700F05D40 /* Friend.swift */; };
 		643046E72291991A00F05D40 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643046E62291991A00F05D40 /* FriendTableViewCell.swift */; };
 		643046F42291E19900F05D40 /* FriendDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643046F32291E19900F05D40 /* FriendDetailsViewController.swift */; };
+		6461533E22A58A4500C3EE8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6461533D22A58A4400C3EE8C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,12 +48,12 @@
 		6428A3FE22976E0400972254 /* AddHomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddHomeworkViewController.swift; path = NIBMConnect/Models/AddHomeworkViewController.swift; sourceTree = SOURCE_ROOT; };
 		6428A40022977C7A00972254 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyProfileViewController.swift; path = NIBMConnect/Models/MyProfileViewController.swift; sourceTree = SOURCE_ROOT; };
 		643046CA2291286500F05D40 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		643046DA2291736400F05D40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		643046DE229174F200F05D40 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StartViewController.swift; path = NIBMConnect/ViewControllers/StartViewController.swift; sourceTree = SOURCE_ROOT; };
 		643046E022917BDD00F05D40 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendsViewController.swift; path = NIBMConnect/ViewControllers/FriendsViewController.swift; sourceTree = SOURCE_ROOT; };
 		643046E3229184B700F05D40 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		643046E62291991A00F05D40 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		643046F32291E19900F05D40 /* FriendDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendDetailsViewController.swift; path = NIBMConnect/ViewControllers/FriendDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
+		6461533D22A58A4400C3EE8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Chan/NIBMConnect/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B351CAEF5D885E2B0307F4A4 /* Pods-NIBMConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.release.xcconfig"; sourceTree = "<group>"; };
 		F7E2460A617BD0CA81483B67 /* Pods-NIBMConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.debug.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,7 +115,7 @@
 				0E333992228F404C005576A4 /* ViewControllers */,
 				0EB94E5D228DDD9F0095E5B6 /* AppDelegate.swift */,
 				0EB94E64228DDDA00095E5B6 /* Assets.xcassets */,
-				643046DA2291736400F05D40 /* GoogleService-Info.plist */,
+				6461533D22A58A4400C3EE8C /* GoogleService-Info.plist */,
 				0EB94E66228DDDA00095E5B6 /* LaunchScreen.storyboard */,
 				0EB94E69228DDDA00095E5B6 /* Info.plist */,
 			);
@@ -237,7 +237,7 @@
 			files = (
 				0EB94E68228DDDA00095E5B6 /* LaunchScreen.storyboard in Resources */,
 				643046CB2291286500F05D40 /* Home.storyboard in Resources */,
-				643046DB2291736400F05D40 /* GoogleService-Info.plist in Resources */,
+				6461533E22A58A4500C3EE8C /* GoogleService-Info.plist in Resources */,
 				0EB94E65228DDDA00095E5B6 /* Assets.xcassets in Resources */,
 				0EB94E63228DDD9F0095E5B6 /* Main.storyboard in Resources */,
 			);
