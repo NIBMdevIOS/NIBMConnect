@@ -27,7 +27,8 @@
 		643046E4229184B700F05D40 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643046E3229184B700F05D40 /* Friend.swift */; };
 		643046E72291991A00F05D40 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643046E62291991A00F05D40 /* FriendTableViewCell.swift */; };
 		643046F42291E19900F05D40 /* FriendDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643046F32291E19900F05D40 /* FriendDetailsViewController.swift */; };
-		6461533E22A58A4500C3EE8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6461533D22A58A4400C3EE8C /* GoogleService-Info.plist */; };
+		6472FEBE22A634F20094847B /* NIBMConnect.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 6472FEBD22A634F20094847B /* NIBMConnect.xcworkspace */; };
+		6472FEC022A6355B0094847B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6472FEBF22A6355B0094847B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +54,8 @@
 		643046E3229184B700F05D40 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		643046E62291991A00F05D40 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		643046F32291E19900F05D40 /* FriendDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendDetailsViewController.swift; path = NIBMConnect/ViewControllers/FriendDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
-		6461533D22A58A4400C3EE8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Chan/NIBMConnect/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6472FEBD22A634F20094847B /* NIBMConnect.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = NIBMConnect.xcworkspace; sourceTree = SOURCE_ROOT; };
+		6472FEBF22A6355B0094847B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B351CAEF5D885E2B0307F4A4 /* Pods-NIBMConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.release.xcconfig"; sourceTree = "<group>"; };
 		F7E2460A617BD0CA81483B67 /* Pods-NIBMConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.debug.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,7 +117,8 @@
 				0E333992228F404C005576A4 /* ViewControllers */,
 				0EB94E5D228DDD9F0095E5B6 /* AppDelegate.swift */,
 				0EB94E64228DDDA00095E5B6 /* Assets.xcassets */,
-				6461533D22A58A4400C3EE8C /* GoogleService-Info.plist */,
+				6472FEBD22A634F20094847B /* NIBMConnect.xcworkspace */,
+				6472FEBF22A6355B0094847B /* GoogleService-Info.plist */,
 				0EB94E66228DDDA00095E5B6 /* LaunchScreen.storyboard */,
 				0EB94E69228DDDA00095E5B6 /* Info.plist */,
 			);
@@ -237,9 +240,10 @@
 			files = (
 				0EB94E68228DDDA00095E5B6 /* LaunchScreen.storyboard in Resources */,
 				643046CB2291286500F05D40 /* Home.storyboard in Resources */,
-				6461533E22A58A4500C3EE8C /* GoogleService-Info.plist in Resources */,
 				0EB94E65228DDDA00095E5B6 /* Assets.xcassets in Resources */,
 				0EB94E63228DDD9F0095E5B6 /* Main.storyboard in Resources */,
+				6472FEBE22A634F20094847B /* NIBMConnect.xcworkspace in Resources */,
+				6472FEC022A6355B0094847B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
